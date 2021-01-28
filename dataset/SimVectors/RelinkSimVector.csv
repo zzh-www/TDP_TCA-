@@ -1,0 +1,8 @@
+combination,numInstances,dis_mean,dist_median,dist_min,dist_max,dist_std
+Apache=>Safe,-3,-3,-3,0,-3,-3
+Apache=>Zxing,3,-3,-3,-3,-3,-3
+Safe=>Apache,3,3,3,0,3,3
+Safe=>Zxing,3,-2,-3,-3,0,-2
+Zxing=>Apache,-2,3,3,3,3,3
+Zxing=>Safe,-3,3,3,3,0,3
+
