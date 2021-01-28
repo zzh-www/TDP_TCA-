@@ -56,21 +56,27 @@ import pandas as pd
 #             df.to_csv(dir_path.replace('\\', '/') + '/' + file + '.csv',index=False)
 
 
-import numpy as np
-arrs=[]
-arr_fs = []
-arr = np.array([[1, 1, 1], [65, 3, 23424 ],[0,0,0],[0,0,0]])
-arr_f = np.array([[0],[1],[0],[1]])
-for i in range(len(arr)):
-    if arr[i].tolist() !=  np.zeros(len(arr[0])).tolist():
-        arrs.append(arr[i])
-        arr_fs.append(arr_f[i])
-arr = np.array(arrs)
-arr_f = np.array(arr_fs)
-# arr =
-# arr.delete(arr[arr == [1,1,1]])
-# np.delete(arr,arr[arr==1,1,1])
-# arr = arr[arr.tolist() != [0,0,0]]
-# arr = np.delete(arr,arr == np.array([0,0,0]))
-print(arr)
-print(arr_f)
+# import numpy as np
+# arrs=[]
+# arr_fs = []
+# arr = np.array([[1, 1, 1], [65, 3, 23424 ],[0,0,0],[0,0,0]])
+# arr_f = np.array([[0],[1],[0],[1]])
+# for i in range(len(arr)):
+#     if arr[i].tolist() !=  np.zeros(len(arr[0])).tolist():
+#         arrs.append(arr[i])
+#         arr_fs.append(arr_f[i])
+# arr = np.array(arrs)
+# arr_f = np.array(arr_fs)
+# # arr =
+# # arr.delete(arr[arr == [1,1,1]])
+# # np.delete(arr,arr[arr==1,1,1])
+# # arr = arr[arr.tolist() != [0,0,0]]
+# # arr = np.delete(arr,arr == np.array([0,0,0]))
+# print(arr)
+# print(arr_f)
+import pandas
+import os
+df = pd.read_csv('TCA_PLUS_CDPD_balanced.csv', sep=',')
+print(df)
+df['DATA_SET'] = df['repository_name']+":"+df['Training Set']+'to'+df['Test Set']
+df.to_csv('a.csv',index=False)

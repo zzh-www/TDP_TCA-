@@ -91,6 +91,7 @@ def train_and_save(
     path,
     c_weights = None,):
     cls = LogisticRegression(class_weight='balanced');
+    # 为了平衡样本，有些样本过于不均衡会出现预测结果全为0的情况
     cls.fit(c_train_x, c_train_y, sample_weight=c_weights)
     y_pred = cls.predict(c_test_x)
 
