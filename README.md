@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # TDP_TCA+
 ##### 复现 [transfer defeat project](http://www.cse.ust.hk/~hunkim/papers/nam-icse2013.pdf) 
 
@@ -21,7 +20,6 @@ run test.py 进行实验
 
 
 =======
-# TDP_TCA-
+# TDP_TCA+
 REDO transfer defeat project
 run test.py
->>>>>>> 13d767f1840cc69c6243e921e64e7ad9bd0d9e04
